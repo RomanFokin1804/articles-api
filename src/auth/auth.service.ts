@@ -49,6 +49,7 @@ export class AuthService {
 
     let passwordMatches;
     if (
+      // Fast bad solution :(
       data.email === 'admin@test.com' &&
       data.password === existingUser.password
     ) {
